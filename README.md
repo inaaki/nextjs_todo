@@ -1,62 +1,19 @@
 # Todo Application
 
-A modern, feature-rich todo application built with Next.js and powered by Bun.
+A modern, feature-rich todo application built with Next.js, TypeScript, and Bun.
 
-## Tech Stack And Libraries Used
+## Tech Stack
 
 - Next.js
 - TypeScript
 - Tailwind CSS
-- Drizzle ORM
-- SQLite
-- Zod
-- React Hook Form
-- Docker
+- PostgreSQL
 - Bun (JavaScript runtime)
-
-## Description
-
-This is a full-featured todo application that allows users to create, update, delete, and organize tasks. The application demonstrates modern web development practices using Next.js framework with Bun as the JavaScript runtime.
-
-## Installation
-
-Make sure you have Bun installed on your system. If not, install it by following the instructions at [bun.sh](https://bun.sh).
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/todo.git
-cd todo
-
-# Install dependencies using Bun
-bun install
-```
-
-## Development
-
-```bash
-# Run the development server
-bun run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
-
-## Build and Production
-
-```bash
-# Build the application
-bun run build
-
-# Start the production server
-bun run start
-```
 
 ## Features
 
 - Create, read, update, and delete todos
 - Mark todos as complete/incomplete
-- Filter todos by status
-- Responsive design
-- Data persistence using SQLite and Drizzle ORM
 
 ## Project Structure
 
@@ -70,14 +27,31 @@ todo/
 └── types/           # TypeScript type definitions
 ```
 
-## Docker
+## Installation
 
-A Docker configuration is included for containerized deployment.
+Make sure you have Bun installed. If not, see [bun.sh](https://bun.sh).
 
-```bash
-# Build and run with Docker
-docker build -t todo-app .
-docker run -p 3000:3000 todo-app
+```sh
+git clone https://github.com/yourusername/todo.git
+cd todo
+bun install
+```
+
+## Development
+
+```sh
+bun run dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Build and Production
+
+```sh
+bun run build
+bun run start
 ```
 
 ## License
+
+MIT
